@@ -30,6 +30,7 @@ add_bg_from_local('background.png')
 
 def nhanDienThongQuaVideo():
     import streamlit as st
+    from streamlit_webrtc import webrtc_streamer
     import tempfile
     import cv2
     from ctypes import sizeof
@@ -197,6 +198,7 @@ def nhanDienThongQuaVideo():
             st3_text.markdown(f"**{fps:.2f}**")
 def nhanDienThongQuaWebcam():
     import streamlit as st
+    from streamlit_webrtc import webrtc_streamer
     import tempfile
     import cv2
     from ctypes import sizeof
