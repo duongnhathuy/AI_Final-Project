@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_webrtc import webrtc_streamer
 import base64
 def intro():
     import streamlit as st
@@ -31,7 +30,6 @@ add_bg_from_local('background.png')
 def nhanDienThongQuaVideo():
     import streamlit as st
     from streamlit_webrtc import webrtc_streamer
-    import session_info
     import tempfile
     import cv2
     from ctypes import sizeof
@@ -200,7 +198,6 @@ def nhanDienThongQuaVideo():
 def nhanDienThongQuaWebcam():
     import streamlit as st
     from streamlit_webrtc import webrtc_streamer
-    import session_info
     import tempfile
     import cv2
     from ctypes import sizeof
